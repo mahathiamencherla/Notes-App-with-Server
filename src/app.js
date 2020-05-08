@@ -1,8 +1,10 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+require('dotenv').config()
 require('./db/mongoose')
 const Notes = require('./notes')
+
 
 const pubdir = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname,'../templates/views')

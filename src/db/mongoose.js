@@ -1,8 +1,15 @@
 const mongoose = require('mongoose')
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/notes-app', {
+// mongoose.connect('mongodb://127.0.0.1:27017/notes-app', {
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false
+// })
+
+mongoose.connect(process.env.mongoURI, {
     useNewUrlParser: true,
     useCreateIndex: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    useUnifiedTopology: true
 })

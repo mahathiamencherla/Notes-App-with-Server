@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>Read</title>
+        <link rel="icon" href="images/note.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body id="remove">
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+        <form  class="form">
+            <label>Title:</label>
+            <input type="text" placeholder="Enter note title!" id="title">
+            <input type="submit" value="Submit!">
+            <a id = "home" href="/">HOME</a>
+        </form>
+        <div >
+                <p id="list">{{details}}</p> 
+                <p id="list">{{body}}</p>           
+            </div> 
+        {{>footer}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+        <script src= "/js/read.js" >  </script>
+    </body>
+    
+
+</html> 
